@@ -1,0 +1,180 @@
+/* ===== Wrapper halaman booking ===== */
+
+.booking-page {
+    background: #f4f7fc;
+    padding: 80px 0 100px;
+    min-height: 80vh;
+}
+
+.booking-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ===== Judul ===== */
+
+.booking-container .booking-title {
+    text-align: center;
+    color: #0a6ebd;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.booking-container .booking-subtitle {
+    text-align: center;
+    color: #6b7a8c;
+    margin: 0 0 50px;
+}
+
+
+/* ===== Grid dokter ===== */
+
+.booking-container .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.booking-container .doctor-card {
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(10, 110, 189, 0.08);
+    transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+
+.booking-container .doctor-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* Sembunyikan radio bawaan browser sepenuhnya */
+
+.booking-container .doctor-card input[type="radio"] {
+    position: absolute !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+/* Kartu terpilih */
+
+.booking-container .doctor-card.selected,
+.booking-container .doctor-card:has(input:checked) {
+    border-color: #0d6efd;
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.2);
+}
+
+
+/* Tanda centang di pojok kartu terpilih */
+
+.booking-container .doctor-card.selected::after,
+.booking-container .doctor-card:has(input:checked)::after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 50%;
+    font-size: .85rem;
+    z-index: 3;
+}
+
+.booking-container .doctor-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.booking-container .doctor-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    color: #1b2a3b;
+}
+
+.booking-container .badge-spesialis {
+    display: inline-block;
+    background: #e6f0ff;
+    color: #0d6efd;
+    font-weight: 600;
+    font-size: .85rem;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+.booking-container .doctor-card p {
+    color: #6b7a8c;
+    font-size: .95rem;
+    margin: 0;
+}
+
+
+/* ===== Form ===== */
+
+.booking-container .booking-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 8px 24px rgba(10, 110, 189, 0.08);
+}
+
+.booking-container .form-group {
+    margin-bottom: 20px;
+}
+
+.booking-container .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1b2a3b;
+}
+
+.booking-container .btn-submit {
+    width: 100%;
+    background: #0d6efd;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    padding: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.booking-container .btn-submit:hover {
+    background: #0b5ed7;
+}
+
+@media (max-width: 767px) {
+    .booking-page {
+        padding: 50px 0 70px;
+    }
+    .booking-container .booking-form {
+        padding: 22px;
+    }
+}

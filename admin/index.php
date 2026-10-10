@@ -31,7 +31,16 @@
                 // case 'pasien':
                 //     include 'pages/pasien/pasien.php';
                 //     break;
+                
+                //janji temu
+                case 'janji-temu':
+                    include 'pages/janji-temu/janji_temu.php';
+                    break;      
 
+
+                case 'antrean-klinik':
+                include 'pages/antrean-klinik/antrean_klinik.php';
+                break;
                 // Kalau page tidak ditemukan
                 default:
                     echo '<div class="container-fluid"><h4 class="text-gray-800">Halaman tidak ditemukan</h4></div>';
@@ -41,7 +50,9 @@
                 case 'janji-temu':
                     include 'pages/janji-temu/janji_temu.php';
                     break;      
-                
+
+                //antrean
+          
                    
             }
             ?>

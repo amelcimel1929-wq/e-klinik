@@ -27,4 +27,7 @@
 
     <!-- Template Stylesheet -->
     <link href="pasien/template-pasien/css/style.css" rel="stylesheet">
+    <?php if (isset($page) && $page == 'booking'): ?>
+    <link href="pasien/css/booking.css" rel="stylesheet">
+    <?php endif; ?>  
 </head>

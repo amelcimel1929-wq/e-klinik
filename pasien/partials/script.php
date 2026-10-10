@@ -11,3 +11,6 @@
 
 <!-- Template Javascript -->
 <script src="pasien/template-pasien/js/main.js"></script>
+<?php if (isset($page) && $page == 'booking'): ?>
+    <script src="pasien/js/booking.js"></script>
+<?php endif; ?>

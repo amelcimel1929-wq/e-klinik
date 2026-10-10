@@ -1,4 +1,4 @@
-    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+    <!--<div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
@@ -23,4 +23,4 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->

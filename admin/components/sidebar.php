@@ -62,7 +62,7 @@ function aktif($nama)
                 <span class="badge-count bg-teal-500/20 text-emerald-400">1</span>
             </a>
 
-            <a href="index.php?page=antrean" class="nav-btn <?= aktif('antrean') ?> menu-item">
+            <a href="index.php?page=antrean-klinik" class="nav-btn <?= aktif('antrean-klinik') ?> menu-item">
                 <i class="fa-solid fa-users-line menu-icon"></i>
                 <span>Antrean Klinik</span>
             </a>
